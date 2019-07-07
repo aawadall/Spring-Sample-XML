@@ -6,7 +6,7 @@ import com.aawadall.model.Customer;
 import com.aawadall.repository.CustomerRepository;
 import com.aawadall.repository.HibernateCustomerRepositoryImpl;
 
-public class CustomerServiceImple implements CustomerService {
+public class CustomerServiceImpl implements CustomerService {
     private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
 
     @Override
