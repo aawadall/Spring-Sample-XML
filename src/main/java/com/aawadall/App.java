@@ -1,7 +1,9 @@
 package com.aawadall;
 
 import com.aawadall.service.CustomerService;
-import com.aawadall.service.CustomerServiceImpl;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Hello world!
@@ -9,7 +11,10 @@ import com.aawadall.service.CustomerServiceImpl;
  */
 public class App {
     public static void main(String[] args) {
-        CustomerService service = new CustomerServiceImpl();
+        // CustomerService service = new CustomerServiceImpl();
+
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("applicationConext.xml");
+        CustomerService service = appContext.getBean("customerService", CustomerService.class);
         System.out.println("Find First Customer");
         System.out.println(service.findAll().get(0).getFirstName());
     }
