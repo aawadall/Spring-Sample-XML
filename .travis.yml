@@ -1,4 +1,7 @@
 language: java
 sudo: false
 
-script: "mvn test" 
+script: 
+  - "mvn test"
+  - "mvn build"
+  - "java -jar ./target/spring_sample_xml-1.0-SNAPSHOT.jar" 
