@@ -1,1 +1,2 @@
 * consider the following project https://crunchify.com/how-to-create-build-java-project-including-all-dependencies-using-maven-maven-resources-maven-dependency-maven-jar-plugin-tutorial/ 
+* read https://www.tutorialspoint.com/spring/index.htm
