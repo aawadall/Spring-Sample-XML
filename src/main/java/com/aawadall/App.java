@@ -25,11 +25,11 @@ public class App {
                 System.out.println("Directory " + listOfFiles[i].getName());
             }
         }
-        /*
-        ApplicationContext appContext = new ClassPathXmlApplicationContext("../../applicationConext.xml");
+        
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         CustomerService service = appContext.getBean("customerService", CustomerService.class);
         System.out.println("Find First Customer");
         System.out.println(service.findAll().get(0).getFirstName());
-        */
+        
     }
 }
