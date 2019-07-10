@@ -3,11 +3,15 @@ package com.aawadall.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.aawadall.model.Customer;
 
 /**
  * STUB
  */
+
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
     @Override
     public List<Customer> findAll() {
