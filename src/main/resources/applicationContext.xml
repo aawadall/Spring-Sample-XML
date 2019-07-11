@@ -6,7 +6,7 @@
 	<bean name="customerRepository"
 		class="com.aawadall.repository.HibernateCustomerRepositoryImpl" />
 	<bean name="customerService"
-		class="com.aawadall.service.CustomerServiceImpl" >
+		class="com.aawadall.service.CustomerServiceImpl" autowire="byType">
 		<!--constructor-arg index="0" ref="customerRepository"></constructor-arg-->
 
 	</bean>
