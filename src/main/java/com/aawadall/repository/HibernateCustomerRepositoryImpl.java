@@ -5,9 +5,12 @@ import java.util.List;
 
 import com.aawadall.model.Customer;
 
+import org.springframework.stereotype.Repository;
+
 /**
  * STUB
  */
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
     @Override
     public List<Customer> findAll() {

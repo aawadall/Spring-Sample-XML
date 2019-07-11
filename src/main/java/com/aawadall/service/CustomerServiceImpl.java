@@ -5,9 +5,16 @@ import java.util.List;
 import com.aawadall.model.Customer;
 import com.aawadall.repository.CustomerRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
+    @Autowired
     private CustomerRepository customerRepository;
 
+    // Removed constructors as preparation for the annotation technicque 
+    /*
     public CustomerServiceImpl() {
     	
     }
@@ -15,7 +22,7 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerServiceImpl(CustomerRepository customerRepository) {
     	this.customerRepository = customerRepository;
     }
-    
+    */
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
