@@ -13,6 +13,11 @@ public class CustomerServiceImpl implements CustomerService {
     //@Autowired
     private CustomerRepository customerRepository;
 
+    @Autowired
+    public CustomerServiceImpl(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+        System.out.println("Constructor injection invoked");
+    }
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
@@ -21,7 +26,7 @@ public class CustomerServiceImpl implements CustomerService {
     /**
      * @param customerRepository the customerRepository to set
      */
-    @Autowired
+    //@Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
         System.out.println("Setter injection invoked!");
