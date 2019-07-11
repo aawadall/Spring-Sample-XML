@@ -13,16 +13,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    // Removed constructors as preparation for the annotation technicque 
-    /*
-    public CustomerServiceImpl() {
-    	
-    }
-    
-    public CustomerServiceImpl(CustomerRepository customerRepository) {
-    	this.customerRepository = customerRepository;
-    }
-    */
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
