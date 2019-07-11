@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
-    @Autowired
+    //@Autowired
     private CustomerRepository customerRepository;
 
     @Override
@@ -21,8 +21,10 @@ public class CustomerServiceImpl implements CustomerService {
     /**
      * @param customerRepository the customerRepository to set
      */
+    @Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
+        System.out.println("Setter injection invoked!");
     }
 
 }
