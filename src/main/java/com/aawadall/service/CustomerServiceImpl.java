@@ -10,16 +10,17 @@ import org.springframework.stereotype.Service;
 
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
-    // @Autowired
+    @Autowired
     private CustomerRepository customerRepository;
 
     @Autowired
     public CustomerServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
-        System.out.println("Constructor injection invoked");
+        System.out.println("CustomerServiceImpl Constructor injection invoked");
     }
 
     public CustomerServiceImpl() {
+        System.out.println("CustomerServiceImpl default no args constructor invoked");
     }
 
     @Override
@@ -30,10 +31,10 @@ public class CustomerServiceImpl implements CustomerService {
     /**
      * @param customerRepository the customerRepository to set
      */
-    // @Autowired
+    @Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
-        System.out.println("Setter injection invoked!");
+        System.out.println("CustomerServiceImpl::setCustomerRepository Setter injection invoked!");
     }
 
 }
