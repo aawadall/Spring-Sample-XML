@@ -1,12 +1,6 @@
 
 package com.aawadall;
 
-import com.aawadall.repository.CustomerRepository;
-import com.aawadall.repository.HibernateCustomerRepositoryImpl;
-import com.aawadall.service.CustomerService;
-import com.aawadall.service.CustomerServiceImpl;
-
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
