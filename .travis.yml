@@ -7,7 +7,7 @@ jobs:
       script: "mvn test"
     - stage: "Compilation Test"
       script: 
-      - "mvn package"
+      - "mvn clean package"
       - "java -jar ./target/spring_sample_xml-1.0-SNAPSHOT.jar" 
     - stage: "Deploy"
       script: "echo todo: call mvn deploy"
