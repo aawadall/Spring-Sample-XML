@@ -1,12 +1,9 @@
 package com.aawadall;
 
-import java.io.File;
-
 import com.aawadall.service.CustomerService;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Hello world!

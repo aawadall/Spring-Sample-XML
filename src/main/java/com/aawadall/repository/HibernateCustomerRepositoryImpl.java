@@ -3,8 +3,6 @@ package com.aawadall.repository;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.aawadall.model.Customer;
 
 import org.springframework.stereotype.Repository;
