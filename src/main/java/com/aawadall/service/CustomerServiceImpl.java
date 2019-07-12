@@ -16,10 +16,11 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     public CustomerServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
-        System.out.println("Constructor injection invoked");
+        System.out.println("CustomerServiceImpl Constructor injection invoked");
     }
 
     public CustomerServiceImpl() {
+        System.out.println("CustomerServiceImpl empty constructor invoked");
     }
 
     @Override
