@@ -7,10 +7,15 @@ import org.springframework.stereotype.Repository;
 
 import com.aawadall.model.Customer;
 
+import org.springframework.stereotype.Repository;
+
 /**
  * STUB
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> e662d4ebfa0ac3b41eb93231a131fb0e5caf843b
 @Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
     @Override

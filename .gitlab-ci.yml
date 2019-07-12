@@ -1,0 +1,23 @@
+image: maven:latest
+
+stages: 
+- test 
+- build 
+- post-compile 
+
+test:
+  stage: test
+  script: mvn test 
+
+build:
+  stage: build
+  script:
+    - mvn clean 
+    - mvn package 
+    
+
+post-compile:
+  stage: post-compile 
+  script: 
+    - mvn package 
+    - java -jar ./target/spring_sample_xml-1.0-SNAPSHOT.jar

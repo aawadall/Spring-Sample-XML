@@ -1,7 +1,13 @@
 language: java
 sudo: false
 
-script: 
-  - "mvn test"
-  - "mvn package"
-  - "java -jar ./target/spring_sample_xml-1.0-SNAPSHOT.jar" 
+jobs:
+  include:
+    - stage: "Unit Test"
+      script: "mvn test"
+    - stage: "Compilation Test"
+      script: 
+      - "mvn package"
+      - "java -jar ./target/spring_sample_xml-1.0-SNAPSHOT.jar" 
+    - stage: "Deploy"
+      script: "echo todo: call mvn deploy"
