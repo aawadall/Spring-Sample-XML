@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 @Service("customerService")
-@Scope("Singleton")
+@Scope("singleton")
 public class CustomerServiceImpl implements CustomerService {
     // @Autowired
     private CustomerRepository customerRepository;
