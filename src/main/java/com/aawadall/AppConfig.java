@@ -23,9 +23,9 @@ public class AppConfig {
         return service;
     }
 
-    @Bean(name = "customerRepository")
-    public CustomerRepository getCustomerRepository() {
-        System.out.println("ApConfig::getCustomerRepository");
-        return new HibernateCustomerRepositoryImpl();
-    }
+    // @Bean(name = "customerRepository")
+    // public CustomerRepository getCustomerRepository() {
+    //     System.out.println("ApConfig::getCustomerRepository");
+    //     return new HibernateCustomerRepositoryImpl();
+    // }
 }
